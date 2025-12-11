@@ -38,10 +38,9 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "SureDone",
-          style: TextStyle(fontWeight: FontWeight.bold),
-        ),
+        title: Container(
+            height: 100,
+            child: Image.asset("assets/SureDoneLogo.png")),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
