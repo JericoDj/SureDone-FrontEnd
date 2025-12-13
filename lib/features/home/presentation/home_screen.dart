@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: const PreferredSize(
-          preferredSize: Size.fromHeight(80),
+          preferredSize: Size.fromHeight(60),
           child: CustomHomeAppBar(),
         ),
 

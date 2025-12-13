@@ -18,7 +18,7 @@ class CustomHomeAppBar extends StatelessWidget {
     return SizedBox(
       height: resolvedHeight,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         decoration: BoxDecoration(
           color: Colors.white,
           boxShadow: [
