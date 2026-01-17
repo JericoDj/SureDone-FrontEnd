@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 // Shell with bottom navigation bar
@@ -15,6 +16,8 @@ import 'package:suredone/features/profile/presentation/profile_screen.dart';
 import 'package:suredone/features/placeholder/presentation/placeholder_screen.dart';
 import 'package:suredone/features/auth/presentation/login_screen.dart';
 
+import '../features/home/presentation/bloc/home_bloc.dart';
+
 final GoRouter appRouter = GoRouter(
   initialLocation: "/home",
 
@@ -29,7 +32,15 @@ final GoRouter appRouter = GoRouter(
     ShellRoute(
       builder: (context, state, child) => AppShell(child: child),
       routes: [
-        GoRoute(path: '/home', builder: (_, __) => const HomePage()),
+        GoRoute(
+          path: '/home',
+          builder: (context, state) {
+            return BlocProvider(
+              create: (_) => HomeBloc(),
+              child: const HomePage(),
+            );
+          },
+        ),
         GoRoute(path: '/activity', builder: (_, __)  => const ActivityScreen()),
         GoRoute(path: '/messages', builder: (_, __) => const MessagesScreen()),
         GoRoute(path: '/wallet', builder: (_, __) => const WalletScreen()),

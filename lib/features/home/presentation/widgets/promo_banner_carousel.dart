@@ -1,19 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-class Promo {
-  final String imageUrl; // can be asset path or network url
-  final String title;
-  final String subtitle;
-  final VoidCallback? onTap;
-
-  Promo({
-    required this.imageUrl,
-    required this.title,
-    required this.subtitle,
-    this.onTap,
-  });
-}
+import '../../domain/entities/promo.dart';
 
 class PromoBannerCarousel extends StatefulWidget {
   final List<Promo> promos;
