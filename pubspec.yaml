@@ -1,0 +1,51 @@
+name: suredone
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  go_router: ^17.0.1
+  cupertino_icons: ^1.0.8
+  connectivity_plus: ^7.0.0
+  flutter_bloc: ^9.1.1
+  bloc: ^9.1.0
+  image_picker: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+# 👇 MUST be OUTSIDE dev_dependencies
+flutter_launcher_icons:
+  image_path: assets/SureDoneLogo-homebutton.png
+
+  android: true
+  ios: true
+
+  web:
+    generate: true
+    image_path: assets/SureDoneLogo-homebutton.png
+
+  windows:
+    generate: true
+    image_path: assets/SureDoneLogo-homebutton.png
+
+  macos:
+    generate: true
+    image_path: assets/SureDoneLogo-homebutton.png
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/

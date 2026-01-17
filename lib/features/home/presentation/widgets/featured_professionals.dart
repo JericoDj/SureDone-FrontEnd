@@ -72,7 +72,6 @@ class _ProfessionalCard extends StatelessWidget {
   final String imageUrl;
 
   const _ProfessionalCard({
-    super.key,
     required this.name,
     required this.service,
     required this.rating,

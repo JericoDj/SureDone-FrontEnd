@@ -19,7 +19,7 @@ class ServicesGrid extends StatelessWidget {
         physics: const NeverScrollableScrollPhysics(),
         itemCount: services.length,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4,
+          crossAxisCount: 3,
           mainAxisSpacing: 14,
           crossAxisSpacing: 14,
           childAspectRatio: 1,

@@ -15,11 +15,7 @@ class HomeState {
   factory HomeState.initial() {
     return HomeState(
       services: const [
-        ServiceItem(
-          name: 'Delivery',
-          icon: Icons.delivery_dining,
-          route: '/delivery',
-        ),
+
         ServiceItem(
           name: 'Tutor',
           icon: Icons.menu_book_rounded,
@@ -35,11 +31,7 @@ class HomeState {
           icon: Icons.pets_rounded,
           route: '/pet',
         ),
-        ServiceItem(
-          name: 'Web/App Dev',
-          icon: Icons.computer_rounded,
-          route: '/dev',
-        ),
+
         ServiceItem(
           name: 'Home Cleaning',
           icon: Icons.cleaning_services_rounded,
